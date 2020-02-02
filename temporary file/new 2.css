@@ -1,0 +1,56 @@
+#galerie-menu
+{
+height:300px;
+width:670px;
+margin:1em auto;
+border:solid;
+border-radius:3px;
+box-shadow:1px 1px 3px gray;
+text-align:right;
+whitespace:nowrap;
+overflow:hidden;	
+position:relative;
+left:0 ;
+ top:0;
+}
+#galerie-menu a , #galerie-menu:hover a:focus
+{	position:relative;
+	display:inline-block;
+	width:30px;
+	height:300px;
+	overflow:hidden;
+verticalalign:top;
+z-index:1;
+transition:1s;
+transition-timing-function: cubic-bezier(0.00,0.01,0.00,1.00);
+}
+ #galerie-menu a:hover ,#galerie-menu a:focus{
+	 width : 400px;
+	 transition:1s;
+ }
+#galerie-menu a:first-child
+{
+width: 400px;
+position: absolute;
+left:0 ;
+top:0;
+z-index:0;
+}
+#galerie-menu a:before
+{
+content:attr(title);
+text-align:center;
+height:30px;
+width:300px;
+position:absolute;
+bottom:0;
+left:0;
+background:rgba(0,0,0,0.3);
+border:1px solid gray;
+padding-right:100px;
+font-size:30px;
+color:white;
+line-height:22px;
+transform:rotate(-90deg);
+transform-origin:17px;
+}
