@@ -1,0 +1,53 @@
+ 
+#galerie-menu
+{
+height:300px;
+width:660px;
+margin:1em auto;
+border:solid;
+border-radius:3px;
+box-shadow:1px 1px 3px gray;
+text-align:right;
+whitespace:nowrap;
+overflow:hidden;	
+position:relative;
+left:0 ;
+ top:0;
+}
+
+img {
+	display : inline-block;
+	height : 300px;
+	margin-bottom : 0px;
+	margin-left : 0px;
+	
+}
+#galerie-menu a 
+
+{
+	padding  : 0 px;
+	position:relative;
+	display:inline-block;
+	width: 52px;
+	height:400px;
+	overflow:hidden;
+verticalalign:top;
+z-index:1;
+	
+	
+
+}
+  #galerie-menu a:hover ,#galerie-menu a:focus{
+	 width : 400px;
+	 transition:1s;
+ }
+#galerie-menu a:first-child
+{
+	background-color : green;
+width: 400px;
+position: absolute;
+left:0 ;
+top:0;
+z-index:0;
+}
+
